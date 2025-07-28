@@ -1,0 +1,7 @@
+[*.cs]
+# Tắt warning CS0618 cho LeanTween
+dotnet_diagnostic.CS0618.severity = none
+
+# Hoặc chỉ tắt cho file cụ thể
+[Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs]
+dotnet_diagnostic.CS0618.severity = none 

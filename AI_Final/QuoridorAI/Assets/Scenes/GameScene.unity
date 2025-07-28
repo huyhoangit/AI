@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene>
+  <GameObjects>
+    <GameObject name="GameBoard" tag="Board">
+      <Transform>
+        <Position x="0" y="0" z="0" />
+        <Rotation x="0" y="0" z="0" />
+        <Scale x="1" y="1" z="1" />
+      </Transform>
+      <Components>
+        <Component type="BoardManager" />
+        <Component type="Renderer">
+          <Material>BoardMaterial</Material>
+        </Component>
+      </Components>
+    </GameObject>
+    <GameObject name="Player1" tag="Player">
+      <Transform>
+        <Position x="-3" y="0" z="-4" />
+        <Rotation x="0" y="0" z="0" />
+        <Scale x="1" y="1" z="1" />
+      </Transform>
+      <Components>
+        <Component type="PlayerMovement" />
+        <Component type="Renderer">
+          <Material>PlayerMaterial</Material>
+        </Component>
+      </Components>
+    </GameObject>
+    <GameObject name="Player2" tag="Player">
+      <Transform>
+        <Position x="3" y="0" z="4" />
+        <Rotation x="0" y="0" z="0" />
+        <Scale x="1" y="1" z="1" />
+      </Transform>
+      <Components>
+        <Component type="PlayerMovement" />
+        <Component type="Renderer">
+          <Material>PlayerMaterial</Material>
+        </Component>
+      </Components>
+    </GameObject>
+    <GameObject name="WallManager" tag="WallManager">
+      <Transform>
+        <Position x="0" y="0" z="0" />
+        <Rotation x="0" y="0" z="0" />
+        <Scale x="1" y="1" z="1" />
+      </Transform>
+      <Components>
+        <Component type="WallManager" />
+      </Components>
+    </GameObject>
+  </GameObjects>
+</Scene>
